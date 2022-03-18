@@ -34,7 +34,7 @@ In search of remote work, he began to study front-end development. I independent
 - Web Development for Beginners: HTML and CSS // Stepik, code-basics.com
 - JavaScript for beginners // Stepik, code-basics.com
 - Git certificate. Basic course. // GeekBrains and hexlet.io
-- JavaScript / Front-end. Stage 0 // RS Schools Course (in progress) -
+- JavaScript / Front-end. Stage 0 // JS/FE PRE-SCHOOL 2022 (https://app.rs.school/certificate/yterwz2e)
 
 ## Code example:
 ```javascript
