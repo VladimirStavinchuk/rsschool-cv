@@ -7,7 +7,7 @@ Date of birth: October 1, 1978
  - **Location:** Krasnodar, Russia
  - **Phone:** +7 967 321 6223
  - **Email:** sun10@mail.ru
- - **Discord:** VladimirStavinchuk
+ - **Discord:** VladimirStavinchuk 
  - **Telegram:**  [VladimirStavinchuk](https://t.me/VladimirStavinchuk)
  - **VK:** [Vladimir Stavinchuk](https://vk.com/id9344784)
  - **GitHub:**  [VladimirStavinchuk](https://github.com/VladimirStavinchuk)
@@ -28,6 +28,9 @@ In search of remote work, he began to study front-end development. I independent
 - Kdenlive
 
 ## Education and courses:
+- 1996-2000 Modern University for the Humanities // Bachelor of Economics
+- 2000-2003 Tomsk State University of Control Systems and Radioelectronics //Information systems in economics
+
 - Web Development for Beginners: HTML and CSS // Stepik, code-basics.com
 - JavaScript for beginners // Stepik, code-basics.com
 - Git certificate. Basic course. // GeekBrains and hexlet.io
