@@ -5,13 +5,178 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <title>CV Stavinchuk V.I.</title>
+  <title>CV Stavinchuk V.</title>
 </head>
 
-<body class="body">
-  <h1>CV Stavinchuk V.I.</h1>
+<body>
+  <!-- header   -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#id-presentation" class="nav__link">Contacts</a></li>
+          <li class="nav__item"><a href="#id-about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#id-summary" class="nav__link">Summary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- container -->
+    <div class="container">
+
+      <h1 class="visually-hidden">rsschool-cv-html CV Vladimir Stavinchuk</h1>
+
+      <!-- presentation  -->
+      <div class="presentation" id="id-presentation">
+        <img class="my-photo" src="assets/img/fotoStavinchukVI.jpg" alt="my foto" title="my foto Vladimir Stavinchuk">
+        <section class="my">
+          <h2 class="my__name">Vladimir Stavinchuk</h2>
+          <p class="my__profession">frontend-developer</p>
+
+          <!-- <p class="my__date">Date of birth: October 1, 1978</p> -->
+
+          <div class="my-basic">
+            <!-- <h3 class="contacts-title">Contacts</h3> -->
+            <ul class="my-basic__list">
+              <li class="my-basic__item">
+                <span>Age:</span>43
+              </li>
+              <li class="my-basic__item">
+                <span>Location:</span>Krasnodar, Russia
+              </li>
+              <li class="my-basic__item">
+                <span>Phone:</span>+7 967 321 6223
+              </li>
+              <li class="my-basic__item">
+                <span>Email:</span>sun10@mail.ru
+              </li>
+              <li class="my-basic__item">
+                <span>Discord:</span>VladimirStavinchuk
+              </li>
+              <li class="my-basic__item">
+                <span>Telegram:</span>
+                <a href="https://t.me/VladimirStavinchuk" title="Telegramm VladimirStavinchuk"
+                  target="_blank">VladimirStavinchuk</a>
+              </li>
+              <li class="my-basic__item">
+                <span>VK:</span>
+                <a href="https://vk.com/id9344784" title="VK Vladimir Stavinchuk" target="_blank">VladimirStavinchuk</a>
+              </li>
+              <li class="my-basic__item">
+                <span>GitHub:</span><a href="https://github.com/VladimirStavinchuk" title="GitHub VladimirStavinchuk"
+                  target="_blank">VladimirStavinchuk</a>
+              </li>
+              <li class="my-basic__item">
+                <span>CodePen:</span><a href="https://www.codewars.com/users/VladimirStavinchuk"
+                  title="CodePen VladimirStavinchuk" target="_blank">VladimirStavinchuk</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+      <!-- end presentation  -->
+
+      <section class="about">
+        <h3 class="section__title" id="id-about">About myself</h3>
+        <p class="aboute__text"> In search of remote work, he began to study front-end development. I independently
+          studied thebasics of CTML, СSS, JS and the basics of GIT. There is no opportunity to study on paid courses,
+          but I was
+          lucky, as I found free PC courses and hope to become a front-end developer. I am also actively studying
+          English.</p>
+      </section>
+
+      <!-- summary  -->
+      <div class="summary" id="id-summary">
+        <section class="summary__item skills">
+          <h3 class="section__title">Skills</h3>
+          <ul class="skills__list">
+            <li class="section__item">HTML</li>
+            <li class="section__item">CSS (Preprocessor SCSS, BEM methodology)</li>
+            <li class="section__item">JavaScript (in process…)</li>
+            <li class="section__item">Git (remote service GitHub and VS Code)</li>
+            <li class="section__item">Windows OS, Linux(Ubuntu)</li>
+            <li class="section__item">Figma(for web development)</li>
+            <li class="section__item">Editors: VSCode</li>
+            <li class="section__item">Figma, Marsy, Adobe Photoshop, GIMP, Corel Draw, Inkscape</li>
+            <li class="section__item">Kdenlive videoeditor</li>
+          </ul>
+        </section>
+
+        <section class="summary__item education">
+          <h3 class="section__title">Education</h3>
+          <ul class="education__list">
+            <li class="section__item">SGU</li>
+            <li class="section__item">TUSUR</li>
+          </ul>
+        </section>
+
+        <section class="summary__item courses">
+          <h3 class="section__title">Courses</h3>
+          <ul class="courses__list">
+            <li class="section__item"><span>Web Development for Beginners (HTML and CSS)</span>Stepik, code-basics.com
+            </li>
+            <li class="section__item"><span>JavaScript for beginners</span>Stepik, code-basics.com</li>
+            <li class="section__item"><span>Git. Basic course</span>GeekBrains and hexlet.io</li>
+            <li class="section__item"><span>JavaScript. Front-end</span>code-basics.com and RS Schools Course (in
+              progress)
+            </li>
+          </ul>
+        </section>
+
+        <section class="summary__item code-example">
+          <h3 class="section__title">Code example:</h3>
+          <pre class="code-example__code">
+        <code >
+        let arr = [5, 2, 1, -10, 8];
+        arr.sort((a, b) => a - b);
+        console.log(arr);
+      </code>
+      </pre>
+        </section>
+
+        <section class="summary__item work-experience">
+          <h3 class="section__title">Work experience</h3>
+          <p class="work-experience__text">Nothing yet…</p>
+        </section>
+
+        <section class="summary__item languages">
+          <h3 class="section__title">Languages</h3>
+          <ul class="languages__list">
+            <li class="section__item"><span>Russian</span>native speaker</li>
+            <li class="section__item"><span>English</span>A1 (A2 in process…)</li>
+          </ul>
+        </section>
+      </div>
+      <!-- /summary  -->
+
+
+    </div>
+    <!-- /container  -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p><a href="https://github.com/VladimirStavinchuk" title="Vladimir Stavinchuk" target="_blank">Vladimir
+            Stavinchuk</a> &copy; 2021
+        </p>
+        <p><a href="https://rs.school/js/" target="_blank"> <img class="footer__logo-img"
+              src=" assets/img/rs_school_js.svg" alt="logo rs-school"></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
