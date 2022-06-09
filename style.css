@@ -86,31 +86,6 @@ h6 {
 }
 /*---------- end normalize ----------*/
 
-/*---------- visually-hidden ----------*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-/*---------- end visually-hidden ----------*/
-
-/* 
-        порядок определения стилей:
-1 позиционирование
-2 блочная модель (размеры, отступы)
-3 типографика (свойства шрифта)
-4 оформление (цвет фона, тень)
-5 анимация 
-*/
-
 /*---------- general properties ----------*/
 
 a {
@@ -122,17 +97,18 @@ a:hover {
 }
 
 p {
-  text-indent: 20px;
+  text-indent: 15px;
 }
 
 body {
+  /* overflow-y: auto; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   min-height: 100vh;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -142,16 +118,16 @@ body {
 }
 
 .container {
+  overflow-x: hidden;
   max-width: 1180px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .section__title {
-  margin-bottom: 20px;
-  padding: 0 15px;
-
+  margin-bottom: 10px;
   text-align: center;
-
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
@@ -163,8 +139,8 @@ body {
 
 /*---------- header ----------*/
 .nav {
-  padding: 10px;
-
+  width: 100%;
+  padding: 5px 5px;
   background-color: #999999;
 }
 
@@ -173,57 +149,62 @@ body {
   justify-content: end;
 }
 
-.nav__item {
-  padding: 10px 10px 10px 10px;
-}
-
 .nav__link,
 .nav__link:visited {
+  margin: 0px 5px 0px 5px;
+  padding: 5px 5px 5px 5px;
   font-size: 14px;
-
   color: #ffffff;
 }
 
 .nav__link:hover {
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   -moz-text-decoration-line: underline;
 }
 
 /*---------- main ----------*/
-
-/*---------- presentation ----------*/
-.presentation {
+.main {
   display: flex;
-  margin-top: 15px;
-
-  background-color: #ffffff;
-}
-
-.about {
-  margin-top: 15px;
-
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #ffffff;
 }
 
 /*---------- section my----------*/
+.presentation {
+  display: flex;
+  -ms-flex-align: center;
+  /* margin: auto; */
+  background-color: #ffffff;
+}
+
 .my {
   width: 100%;
-  padding-left: 40px;
+  /* padding-left: 2%; */
+}
+
+.my-basic {
+  display: flex;
+  padding-left: 10px;
+}
+
+.column {
+  width: 49%;
 }
 
 .my-photo {
-  flex-shrink: 0;
-  width: 230px;
-  height: 297px;
-
-  padding: 10px 10px 10px 10px;
+  /* flex-shrink: 0; */
+  width: 25vw;
+  height: 25%;
+  padding: 5% 15px;
+  clip-path: ellipse(77% 46% at 50% 50%);
 }
 
 .my__name {
   margin-top: 20px;
-  padding-right: 120px;
-
+  padding-right: 10%;
   text-align: center;
   font-size: 30px;
   font-weight: 800;
@@ -233,10 +214,9 @@ body {
 }
 
 .my__profession {
-  padding-right: 110px;
-
+  display: block;
+  margin: 0 auto;
   text-align: center;
-
   font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
@@ -246,25 +226,21 @@ body {
 
 .my-basic__list {
   display: flex;
-  flex-wrap: wrap;
-
-  margin-top: 40px;
+  flex-direction: column;
+  margin-top: 2%;
 }
 
 .my-basic__item {
-  width: 33.33%;
   position: relative;
-
-  padding: 10px 5px 5px 30px;
-
+  padding: 10px 5px 5px 20px;
   color: #999999;
 }
 
 .my-basic__item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 18px;
-  left: 10px;
+  left: 5px;
   width: 10px;
   height: 10px;
   border: 1px solid #666666;
@@ -284,36 +260,42 @@ body {
 /*---------- section ----------*/
 .about {
   padding: 10px;
+  /* margin-top: 15px;
+  background-color: #ffffff;*/
 }
 
-.aboute__text,
-.work-experience__text {
-  padding: 10px 10px 30px 30px;
+.aboute__text
+/* ,
+.work-experience__text */ {
+  padding: 10px 10px 20px 30px;
 }
 
 /*---------- summary ----------*/
 .summary {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 15px;
-
+  margin-top: 10px;
   background-color: #ffffff;
 }
 
 .summary__item {
-  width: 50%;
-  padding: 10px 10px 30px 10px;
+  width: 100%;
+  padding: 10px 10px 20px 10px;
   background-color: #ffffff;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .section__item {
   position: relative;
-  padding: 5px 5px 10px 50px;
+  width: 48%;
+  padding: 5px 5px 5px 50px;
 }
 
 .section__item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   left: 30px;
@@ -324,18 +306,19 @@ body {
 }
 
 /*---------- code-example ----------*/
+.code-example {
+  padding-bottom: 5px;
+}
+
 .code-example__code {
   color: #999999;
 }
 
-/*---------- section ----------*/
-
 /*---------- footer ----------*/
 .footer {
-  margin-top: 15px;
-  padding: 10px 0px;
-
-  background-color: #ffffff;
+  padding: 10px 5px;
+  background-color: #999999;
+  color: #ffffff;
 }
 
 .footer__inner {
@@ -343,7 +326,78 @@ body {
   justify-content: space-around;
 }
 
+.footer__link {
+  color: #ffffff;
+}
+
 .footer__logo-img {
   right: 0;
   width: 60px;
+}
+
+@media (max-width: 768px) {
+  .section__item {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .my {
+    padding-left: 2%;
+  }
+
+  .my-photo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__item {
+    width: 100%;
+    padding-left: 25px;
+    font-size: 12px;
+  }
+  .section__item::before {
+    left: 10px;
+  }
+  .aboute__text
+/* , .work-experience__text */ {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    font-size: 14px;
+  }
+
+  .code-example {
+    font-size: 14px;
+  }
+
+  .column__contacts {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .my__name {
+    font-size: 22px;
+  }
+  .my__profession {
+    font-size: 18px;
+  }
 }
