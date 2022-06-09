@@ -101,7 +101,7 @@ p {
 }
 
 body {
-  /* overflow-y: auto; */
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,7 +198,7 @@ body {
   /* flex-shrink: 0; */
   width: 25vw;
   height: 25%;
-  padding: 5% 15px;
+  padding: 0.5% 2%;
   clip-path: ellipse(77% 46% at 50% 50%);
 }
 
