@@ -27,3 +27,29 @@ In search of remote work, he began to study front-end development. I independent
 - Editors: VSCode, PyCharm community.
 - Figma, Marsy, Adobe Photoshop, GIMP, Corel Draw, Inkscape
 - Kdenlive
+
+
+## Education and courses:
+- Web Development for Beginners: HTML and CSS // Stepik, code-basics.com
+- JavaScript for beginners // Stepik, code-basics.com
+- Git certificate. Basic course. // GeekBrains and hexlet.io
+- JavaScript / Front-end. Stage 0 // RS Schools Course -
+
+## Code example:
+```javascript
+
+let arr = [5, 2, 1, -10, 8];
+
+arr.sort((a, b) => a - b);
+// arr.sort((a, b) => b - a);
+
+console.log(arr); 
+```
+
+## Work experience:
+Nothing yet…
+
+
+## Languages
++ Russian - native speaker.
++ English - A1 (A2 in process…)
