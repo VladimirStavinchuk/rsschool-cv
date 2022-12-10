@@ -1,7 +1,7 @@
 # Vladimir Stavinchuk 
 Date of birth: October 1, 1978
 
-![Vladimir Stavinchuk](./fotoStavinchukVI.jpg "Vladimir Stavinchuk")
+![Vladimir Stavinchuk](fotoStavinchukVI.jpg "Vladimir Stavinchuk")
 
 
 ## Contacts
